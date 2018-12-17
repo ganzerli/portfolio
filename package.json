@@ -1,0 +1,15 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "portfolio to display all projects",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "gh-pages -d dist"
+  },
+  "author": "Massimo Ganzerli",
+  "license": "ISC",
+  "homepage": "https://ganzerli.github.io/portfolio",
+  "dependencies": {
+    "gh-pages": "^2.0.1"
+  }
+}
