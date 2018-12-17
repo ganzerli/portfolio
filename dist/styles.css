@@ -603,7 +603,7 @@ animation: placingNavigation 1s 2s both;
   						rgba(150,255,161, .8),
   						rgba(83, 94, 243, 0.9)
 						),
-     				url(./imgs/OUTTHERE.png);
+     				url(./imgs/OUTTHERE.PNG);
     background-size: cover;
 } 
 .part:nth-child(2) {
