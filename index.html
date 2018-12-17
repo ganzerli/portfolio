@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>PORTFOLIO</title>
+
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="height=device-height , width=device-width, initial-scale=1.0"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Bowlby One SC"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Caveat+Brush"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+
+  <body>
+    <!-- WELCOME TEXT FOR MEDIA SCREENS -->
+    <div id="welcome1" class="opacity-welcome-media">
+      <div class="container">
+        <ul class="welcome">
+          <li>W</li>
+          <li>E</li>
+          <li>L</li>
+          <li>C</li>
+          <li>O</li>
+          <li>M</li>
+          <li>E</li>
+        </ul>
+        <ul class="to">
+          <li>T</li>
+          <li>O</li>
+        </ul>
+        <ul class="my">
+          <li>M</li>
+          <li>Y</li>
+        </ul>
+        <ul class="portfolio">
+          <li>P</li>
+          <li>O</li>
+          <li>R</li>
+          <li>T</li>
+          <li>F</li>
+          <li>O</li>
+          <li>L</li>
+          <li>I</li>
+          <li>O</li>
+        </ul>
+      </div>
+    </div>
+    <!---->
+
+    <!-- FIRST WELCOME OVERLAY -->
+
+    <section id="welcome2" class="welcome-container">
+      <div class="skew left"><h2 class="welcome-text"></h2></div>
+      <div class="skew right"><h2 class="welcome-text"></h2></div>
+    </section>
+
+    <script type="text/javascript">
+      if (typeof Storage !== "undefined") {
+        console.log(sessionStorage);
+        if (sessionStorage.getItem("weclome-animation") === "done") {
+          const w1 = document.getElementById("welcome1");
+          const w2 = document.getElementById("welcome2");
+          w1.classList.remove("opacity-welcome-media");
+          w1.style.display = "none";
+          w2.classList.remove("welcome-container");
+          w2.style.display = "none";
+        } else {
+          sessionStorage.setItem("weclome-animation", "done");
+          console.log("setting sessions, no session set..");
+        }
+      } else {
+      }
+    </script>
+
+    <!-- MENU ICON TOP RIGHT -->
+
+    <div id="menu-fixed" class="">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </div>
+
+    <!-- MENU  INSIDE -->
+
+    <div id="menu-container" class="">
+      <section class="overlayPart">
+        <div class="titleWrap">
+          <div class="de-title-case">
+            <h2 class="title">AND CV</h2>
+            <h2 class="title">&nbsp</h2>
+            <h2 class="title">MORE INFOS</h2>
+          </div>
+        </div>
+        <br />
+        <br />
+        <p class="menu-description">
+          If more personal informations are needed, I will send all the required
+          documents per email.
+        </p>
+
+        <div class="subtitle-container">
+          <div class="subtitle sub2"><h2>x</h2></div>
+        </div>
+      </section>
+
+      <section class="overlayPart">
+        <div class="titleWrap">
+          <div class="de-title-case">
+            <h2 class="title">I'M MASSIMO</h2>
+            <h2 class="title">&nbsp</h2>
+            <h2 class="title">HELLO!...</h2>
+          </div>
+        </div>
+        <br />
+        <br />
+        <p class="menu-description">
+          I grew the passion of coding and web develpoment in my spare time.
+          I've always been interested in computers and how they work, so now
+          having an opportunity to put a website together I've tried to create
+          this "portfolio-app". Read my presentation page for more!!!
+          <br /><br /><strong class="menu-description"
+            >I am now always available per email at:
+            massimoganzerli90@gmail.com</strong
+          >
+        </p>
+
+        <div class="subtitle-container">
+          <div class="subtitle sub2">
+            <h2 class="if-mobile">CV & EDUCATION</h2>
+          </div>
+        </div>
+      </section>
+
+      <section class="overlayPart">
+        <div class="titleWrap">
+          <div class="de-title-case">
+            <h2 class="title">
+              <a href="https://github.com/ganzerli">MY GITHUB</a>
+            </h2>
+            <h2 class="title">&nbsp</h2>
+            <h2 class="title">SEE ALSO</h2>
+          </div>
+        </div>
+        <br />
+        <br />
+        <p class="menu-description">
+          In my github profile i've uploaded recently some projects, when i find
+          a nicer way to do things or for changing somethinngin in style or
+          functionality i push something to that project. Some projects are more
+          recent but sometimes i try to see if i have something older to push to
+          Github..
+        </p>
+
+        <div class="subtitle-container">
+          <a href="https://github.com/ganzerli">
+            <div class="subtitle sub2"><h2>Code On Github</h2></div>
+          </a>
+        </div>
+      </section>
+    </div>
+
+    <!-- main content -->
+
+    <main id="wrapper">
+      <section class="part" attribute-in-html="attribute!">
+        <h2>
+          <a
+            href="#!"
+            attrbref="https://fast-bastion-77132.herokuapp.com/"
+            onclick="return false"
+            onmousedown="linkOut(this.id)"
+            id="redirect-g"
+          >
+            Small Social App
+          </a>
+        </h2>
+        <p>
+          ! ! ! FIXING BACKEND HUROKU ! ! ! Small social network application
+          with strong backend, registration, login with JWT token, edit the
+          profile and the possibility to share posts between users, watch other
+          profiles and like and comment posts.
+        </p>
+      </section>
+
+      <section class="part" attribute-in-html="attribute!">
+        <h2>
+          <a
+            href="#!"
+            attrbref="https://ganzerli.github.io/presentation/"
+            onclick="return false"
+            onmousedown="linkOut(this.id)"
+            id="redirect-f"
+          >
+            Info Page With Details
+          </a>
+        </h2>
+        <p>
+          Formal looking presentation page, With more indepth infos about
+          myself, skills, best projects, indepth of the portfolio and contacts.
+        </p>
+      </section>
+
+      <section class="part" attribute-in-html="attribute!">
+        <h2>
+          <a
+            href="#!"
+            attrbref="https://ganzerli.github.io/lodge-page/"
+            onclick="return false"
+            onmousedown="linkOut(this.id)"
+            id="redirect-d"
+            >LODGE RENT WEBPAGE</a
+          >
+        </h2>
+        <p>
+          A fully responsive webpage made with SASS, in a modern design and
+          contact form. The thema is a renting lodge service for weekends in the
+          mountains.
+        </p>
+      </section>
+
+      <section class="part" attribute-in-html="attribute!">
+        <h2>
+          <a
+            href="#!"
+            attrbref="https://ganzerli.github.io/travel-landing-page/"
+            onclick="return false"
+            onmousedown="linkOut(this.id)"
+            id="redirect-b"
+          >
+            Travelling Landing Page
+          </a>
+        </h2>
+        <p>
+          Responsive webpage on thema Travelling, with css flexbox, has colorful
+          layout and many pictures with welcome animation.
+        </p>
+      </section>
+
+      <section class="part" attribute-in-html="attribute!">
+        <h2>
+          <a
+            href="#!"
+            attrbref="https://ganzerli.github.io/js-shooting-game-page/"
+            onclick="return false"
+            onmousedown="linkOut(this.id)"
+            id="redirect-a"
+            >JAVASCRIPT SHOOTING GAME!</a
+          >
+        </h2>
+        <p>
+          Game made with javascript and html, the enemies are coming from the
+          top and the hero destroyes them with laser, there are 3 level/states,
+          gaining experience the hero and laser are gitting better.
+        </p>
+      </section>
+
+      <section class="part" attribute-in-html="attribute!">
+        <h2>
+          <a
+            href="#!"
+            attrbref="https://github.com/ganzerli/crudPhpMvc"
+            onclick="return false"
+            onmousedown="linkOut(this.id)"
+            id="redirect-e"
+          >
+            MVC PHP ONLY CODE</a
+          >
+        </h2>
+        <p>
+          Model View Control in PHP, all the other routes pages and DB
+          connections can be added, it takes the parameter in the url and cals
+          the specified function to load the page for the requested url.
+        </p>
+      </section>
+
+      <section class="part" attribute-in-html="attribute!">
+        <h2>
+          <a
+            href="#!"
+            attrbref="fade-in-gallery/fade-gallery.html"
+            onclick="return false"
+            onmousedown="myFunction(this.id)"
+            id="redirect-c"
+          >
+            3D feeling image gallery
+          </a>
+        </h2>
+        <p>
+          Interactive gallery with flexboxs, typical shape and clean looking
+          design, the main image changes with fade in effect.
+        </p>
+      </section>
+
+      <section class="part" attribute-in-html="attribute!">
+        <h2>
+          <a
+            href="#!"
+            attrbref="pic-slider/slider.html"
+            onclick="return false"
+            onmousedown="myFunction(this.id)"
+            id="redirect-e"
+          >
+            ONE SIMPLE SLIDER</a
+          >
+        </h2>
+        <p>
+          A simple slider, the dimension of the picture can be easily changed,
+          navigation at the sides, slides forwards and backwards.
+        </p>
+      </section>
+
+      <section class="part" attribute-in-html="attribute!">
+        <h2>coming soon</h2>
+        <p>this project is not finished yet</p>
+      </section>
+
+      <section class="part" attribute-in-html="attribute!">
+        <h2>coming soon</h2>
+        <p>this project is not finished yet</p>
+      </section>
+
+      <!-- ...NAVIGATION -->
+
+      <div id="fixed1" class="fixed-btn">
+        <div class="arrow back btn">
+          <div class="arrow-inside">
+            <div class="arrow-line"></div>
+            <div class="arrow-line"></div>
+            <div class="arrow-line"></div>
+          </div>
+        </div>
+      </div>
+
+      <div id="fixed2" class="fixed-btn">
+        <div class="arrow btn">
+          <div class="arrow-inside">
+            <div class="arrow-line"></div>
+            <div class="arrow-line"></div>
+            <div class="arrow-line"></div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script>
+      function preventDefault(e) {
+        e = e || window.event;
+        if (e.preventDefault) e.preventDefault();
+        e.returnValue = false;
+      }
+
+      function disableScroll() {
+        if (window.addEventListener)
+          // older FF
+          window.addEventListener("DOMMouseScroll", preventDefault, false);
+        window.onwheel = preventDefault; // modern standard
+        window.onmousewheel = document.onmousewheel = preventDefault; // older browsers, IE
+        window.ontouchmove = preventDefault; // mobile
+        document.onkeydown = preventDefaultForScrollKeys;
+      }
+      document.addEventListener("DOMContentLoaded", event => {
+        disableScroll();
+      });
+    </script>
+
+    <script>
+      function myFunction(el) {
+        // the parameter is the id name
+        const idName = el;
+        //alert("the selected element id is "+ idName);
+        // take the wanted attribute of the element
+        let attribute = document
+          .getElementById(idName)
+          .getAttribute("attrbref");
+        //getting current path
+        let myString = window.location.pathname;
+        //taking the last "index.html"  away from the path
+        var newString = myString.substr(0, myString.length - 10);
+        // making a new path name according to the ATTRIBUTE
+        const myLocation = newString + attribute;
+        //adding class for the animation
+        document
+          .getElementById(idName)
+          .parentElement.parentElement.classList.add("cover-screen");
+        //redirecting..
+        setTimeout(() => location.replace(myLocation), 700);
+        document.getElementById(idName).classList.add("cover-screen");
+      }
+
+      function linkOut(el) {
+        const idName = el;
+        const attribute = document
+          .getElementById(idName)
+          .getAttribute("attrbref");
+        // just set the location as if normal link  but wait for the page transition
+        const myLocation = attribute;
+
+        document
+          .getElementById(idName)
+          .parentElement.parentElement.classList.add("cover-screen");
+
+        setTimeout(() => location.replace(myLocation), 700);
+        document.getElementById(idName).classList.add("cover-screen");
+      }
+    </script>
+    <!-- <script src="main.js"></script> not working -->
+    <script src="main.js"></script>
+    <script src="menu.js"></script>
+    <script src="welcome.js"></script>
+  </body>
+</html>
