@@ -597,7 +597,7 @@ animation: placingNavigation 1s 2s both;
 }
 /*#####################################		 END		NAVIGATION         END        NAVIGATION 		########################################*/
 .part:nth-child(1) {
-	background-color:rgba(83, 94, 243, 1);
+	background-color:rgb(83, 94, 243);
      background-image:linear-gradient(
   						205deg,
   						rgba(150,255,161, .8),
