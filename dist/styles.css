@@ -631,7 +631,22 @@ background-position: top center;
 	 background-size: cover;
 	background-position: top center;
 	} 
-.part:nth-child(4) {
+
+	.part:nth-child(4) {
+		background-color: #f5f5f5;
+	 background-image: linear-gradient( 205deg, rgba(255, 190, 110, 0.9), rgba(214, 214, 214, 0.9), rgba(214, 214, 214, 0.8), rgba(100, 130, 199, 0.91) ), url(./imgs/bar-app.PNG);
+	 background-size: cover;
+	 background-position: top left;
+		}
+		.part:nth-child(4) > .part-title{
+					mix-blend-mode: normal;
+					color: rgba(248, 160, 85, 0.9);
+					}
+		.part:nth-child(4) > p{
+					color: hsl(225, 100%, 75%);
+}
+
+.part:nth-child(5) {
     background-color:rgba(150,255,161, 1);  
 	background-image:linear-gradient(
 		205deg,
@@ -643,7 +658,7 @@ background-position: top center;
 	background-position: top center;
 	
 } 
-.part:nth-child(5) {
+.part:nth-child(6) {
       background-color:rgba(85,85,85, 1);
       background-image:linear-gradient(
 		205deg,
@@ -655,21 +670,19 @@ background-position: top center;
 		background-position: top center;
 	
 } 
-.part:nth-child(6) {
+.part:nth-child(7) {
     background-color:rgba(236, 236, 236, 0.8);
 } 
-.part:nth-child(7) {
+.part:nth-child(8) {
     background-color:rgba(40,208,255, 1);
 } 
-.part:nth-child(8) {
+.part:nth-child(9) {
     background-color:rgba(255,237,56, 1);
 } 
-.part:nth-child(9) {
+.part:nth-child(10) {
     background-color:rgba(0,0,0,1);
 } 
-.part:nth-child(10) {
-    background-color:rgba(255,255,255, 1);
-} 
+
 
 
 /*############     menu             #####  menu         MENU		MENU    ####*/
