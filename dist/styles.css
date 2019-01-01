@@ -469,8 +469,8 @@ body{
 	bottom:0;
 	border-radius:10px;
 	transform: translate(-25%,0)rotate(-45deg);
-	transition: all .3s ease-in ;
-	-webkit-transition: all .3s ease-in ;
+	transition: all .2s ease-in ;
+	-webkit-transition: all .2s ease-in ;
 	opacity:0;
 }
 .part:hover::after{
@@ -528,7 +528,7 @@ GOT THE PATH OF THE ANCHOR TAG AND GIVEN THE CLASS COVER-SCREEN TO THE PARENT (.
 	transform: translateX(18%)
 }
 .arrow-inside{
-	transition: transform .6s cubic-bezier(.44,-0.46,.23,1.49);
+	transition: transform .4s cubic-bezier(.44,-0.46,.23,1.49);
 }
 
 .arrow-line{
@@ -555,8 +555,6 @@ GOT THE PATH OF THE ANCHOR TAG AND GIVEN THE CLASS COVER-SCREEN TO THE PARENT (.
 
 .back{
   transform:rotate(180deg);
-  box-shadow: 1px 1px 0px 0px rgba(0,0,0,.5),
-			-1px -1px 0px 0px rgba(255,255,255,.5);
 }
 
 
@@ -768,7 +766,6 @@ background-position: top center;
 	padding:0;
 	z-index: 2;
 	color:#eee;
-	
 }
 .overlayPart.show-3D{
 	display:inline-block;
@@ -826,7 +823,7 @@ background-position: top center;
 	text-align: justify;
 	line-height:1.2em;
 	letter-spacing: .1em;
-	transition:height .4s ease-in, opacity .6s linear, transform .8s ease-in-out;
+	transition:height .4s ease-in, opacity .6s linear, transform .5s ease-in-out;
 	transition-delay: .2s;
 }
 
