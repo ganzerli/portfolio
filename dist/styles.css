@@ -832,12 +832,12 @@ background-position: top center;
 	height:5.3em;
 	overflow: hidden;
 	transform:scale(1.1,1.1);
-	transition: transform .5s ease-in .1s;
+	transition: transform .4s ease-in .1s;
 }
 .de-title-case{
 	padding-left:20%;
 	transform:translateY(-5em);
-	transition:transform .8s cubic-bezier(.31,.77,.44,1.09);
+	transition:transform .5s cubic-bezier(.31,.77,.44,1.09);
 }
 .de-title-case h2{
 		background:linear-gradient(to right , #f32170,#ffeb07,#2196f3,#ff00eb);
@@ -874,7 +874,7 @@ background-position: top center;
 .subtitle.sub2 h2{
 	transform:translateX(100%);
 	opacity: 0;
-	transition: all .5s ease-out ,opacity .5s ease-in-out;
+	transition: all .4s ease-out ,opacity .3s ease-in-out;
 }
 
 
