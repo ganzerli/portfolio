@@ -411,7 +411,7 @@ body{
 	transform:scale(1);
 }
 .part:hover p{
-	transform:translateY(-10%) scale(1);
+	transform:translateY(-5%) scale(1);
 }
 /*
 .part:active{
