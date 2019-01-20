@@ -344,6 +344,7 @@ body{
 	cursor:pointer;
 }
 .part p{
+	word-break: break-all;
 	padding:0 2rem;
 	font-family: 'Merriweather Sans', sans-serif;
 	font-size: 1.3rem;
@@ -590,17 +591,17 @@ animation: placingNavigation 1s 2s both;
 
 /*#####################################		 END		NAVIGATION         END        NAVIGATION 		########################################*/
 
-
 .part:nth-child(1) {
-	background-color:rgb(83, 94, 243);
-     background-image:linear-gradient(
-  						205deg,
-  						rgba(150,255,161, .8),
-  						rgba(83, 94, 243, 0.9)
-						),
-     				url(./imgs/OUTTHERE.PNG);
-    background-size: cover;
-} 
+	background-color:rgb(212, 224, 255);  
+	background-image: linear-gradient( 205deg, rgba(150, 153, 255, 0.9),
+																						 rgba(157, 255, 128, 0.8) ), 
+																						 url(./imgs/pryvapp.PNG);
+background-size: cover;
+background-position: top center;
+}
+.part:nth-child(1) > p{
+	color: hsl(117, 100%, 50%)
+}
 
 .part:nth-child(2) {
 	background-color:rgb(18, 36, 59);
@@ -645,18 +646,16 @@ background-position: top center;
 	background-position: top center;
 	} 
 
-
 	.part:nth-child(5) {
-    background-color:rgb(212, 224, 255);  
-		background-image: linear-gradient( 205deg, rgba(150, 153, 255, 0.9),
-																							 rgba(187, 255, 166, 0.8) ), 
-																							 url(./imgs/pryvapp.PNG);
-	 background-size: cover;
-	background-position: top center;
-	}
-	.part:nth-child(5) > p{
-		color: hsl(117, 100%, 50%)
-}
+		background-color:rgb(83, 94, 243);
+			 background-image:linear-gradient(
+								205deg,
+								rgba(150,255,161, .8),
+								rgba(83, 94, 243, 0.9)
+							),
+							 url(./imgs/OUTTHERE.PNG);
+			background-size: cover;
+	} 
 
 .part:nth-child(6) {
     background-color:rgba(150,255,161, 1);  
@@ -695,7 +694,7 @@ background-position: top center;
 
 
 
-/*############     menu             #####  menu         MENU		MENU    ####*/
+/*MENU		MENU    ####MENU		MENU    ####MENU		MENU    ####MENU		MENU    ####MENU		MENU    ####MENU		MENU    ####MENU		MENU    ####MENU	*/
 
 
 #menu-fixed{
@@ -814,7 +813,7 @@ background-position: top center;
 	transform:scale(1.3,1.3);
 }
 .overlayPart:hover .de-title-case{
-	transform:translateY(0);
+	transform:translateY(10%);
 }
 .overlayPart:hover .subtitle>h2{
 	transform: translateX(-80%);
