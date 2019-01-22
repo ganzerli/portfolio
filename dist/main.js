@@ -1,5 +1,13 @@
 document.addEventListener("DOMContentLoaded", () => {
   //if the user comes
+  // DISABLE TOUCH SCROLLING FROM DEVICE
+  document.addEventListener(
+    "touchmove",
+    function(e) {
+      e.preventDefault();
+    },
+    { passive: false }
+  );
 
   let btnNext = document.querySelector("#fixed2");
   let btnPrev = document.querySelector("#fixed1");
@@ -51,6 +59,8 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     );
   })();
+
+  //
   function b() {
     xPos = window.pageXOffset;
 

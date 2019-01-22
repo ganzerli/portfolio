@@ -1,13 +1,17 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <title>PORTFOLIO</title>
 
     <meta charset="utf-8" />
+
     <meta
       name="viewport"
-      content="height=device-height , width=device-width, initial-scale=1.0"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
     />
+
+    <meta name="Description" content="Portfolio Massimo Ganzerli." />
+
     <link
       href="https://fonts.googleapis.com/css?family=Bowlby One SC"
       rel="stylesheet"
@@ -86,14 +90,6 @@
       } else {
       }
     </script>
-
-    <!-- MENU ICON TOP RIGHT -->
-
-    <div id="menu-fixed" class="">
-      <div class="line"></div>
-      <div class="line"></div>
-      <div class="line"></div>
-    </div>
 
     <!-- MENU  INSIDE -->
 
@@ -184,16 +180,16 @@
             attrbref="https://pryvapp.herokuapp.com/"
             onclick="return false"
             onmousedown="linkOut(this.id)"
-            id="redirect-i"
+            id="redirect-a"
           >
             PRYVAPP
           </a>
         </h2>
         <p>
-          { <br />
-          title:0Y02P, body:0XY9OY9O0XP0P4T8Q60PUO3P99WP <br />
-          }<br />
-          Made with Javascript, Node - Express , Webpack and SASS.
+          Single Page App to organize the day in the dashboard. Local storage is
+          also required but the login and the encrypted messages are managed
+          from a small backend. Made with Javascript, Node - Express , Webpack
+          and SASS.
         </p>
       </section>
 
@@ -205,7 +201,7 @@
             attrbref="https://ganzerli.github.io/presentation/"
             onclick="return false"
             onmousedown="linkOut(this.id)"
-            id="redirect-f"
+            id="redirect-b"
           >
             Info Page With Details
           </a>
@@ -223,7 +219,7 @@
             attrbref="https://ganzerli.github.io/bar-app/"
             onclick="return false"
             onmousedown="linkOut(this.id)"
-            id="redirect-h"
+            id="redirect-c"
           >
             BAR APP
           </a>
@@ -262,7 +258,7 @@
             attrbref="https://fast-bastion-77132.herokuapp.com/"
             onclick="return false"
             onmousedown="linkOut(this.id)"
-            id="redirect-g"
+            id="redirect-e"
           >
             Small Social App
           </a>
@@ -282,7 +278,7 @@
             attrbref="https://ganzerli.github.io/travel-landing-page/"
             onclick="return false"
             onmousedown="linkOut(this.id)"
-            id="redirect-b"
+            id="redirect-f"
           >
             Travelling Landing Page
           </a>
@@ -300,7 +296,7 @@
             attrbref="https://ganzerli.github.io/js-shooting-game-page/"
             onclick="return false"
             onmousedown="linkOut(this.id)"
-            id="redirect-a"
+            id="redirect-g"
             >JAVASCRIPT SHOOTING GAME!</a
           >
         </h2>
@@ -318,7 +314,7 @@
             attrbref="https://github.com/ganzerli/crudPhpMvc"
             onclick="return false"
             onmousedown="linkOut(this.id)"
-            id="redirect-e"
+            id="redirect-h"
           >
             MVC PHP ONLY CODE</a
           >
@@ -337,7 +333,7 @@
             attrbref="fade-in-gallery/fade-gallery.html"
             onclick="return false"
             onmousedown=""
-            id="redirect-c"
+            id="redirect-i"
           >
             3D feeling image gallery
           </a>
@@ -355,7 +351,7 @@
             attrbref="pic-slider/slider.html"
             onclick="return false"
             onmousedown=""
-            id="redirect-e"
+            id="redirect-j"
           >
             ONE SIMPLE SLIDER</a
           >
@@ -373,6 +369,8 @@
 
       <!-- ...NAVIGATION -->
 
+      <!-- MENU ICON TOP RIGHT -->
+
       <div id="fixed1" class="fixed-btn">
         <div class="arrow back btn">
           <div class="arrow-inside">
@@ -381,6 +379,12 @@
             <div class="arrow-line"></div>
           </div>
         </div>
+      </div>
+
+      <div id="menu-fixed" class="">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
       </div>
 
       <div id="fixed2" class="fixed-btn">
@@ -393,27 +397,6 @@
         </div>
       </div>
     </main>
-
-    <script>
-      function preventDefault(e) {
-        e = e || window.event;
-        if (e.preventDefault) e.preventDefault();
-        e.returnValue = false;
-      }
-
-      function disableScroll() {
-        if (window.addEventListener)
-          // older FF
-          window.addEventListener("DOMMouseScroll", preventDefault, false);
-        window.onwheel = preventDefault; // modern standard
-        window.onmousewheel = document.onmousewheel = preventDefault; // older browsers, IE
-        window.ontouchmove = preventDefault; // mobile
-        document.onkeydown = preventDefaultForScrollKeys;
-      }
-      document.addEventListener("DOMContentLoaded", event => {
-        disableScroll();
-      });
-    </script>
 
     <script>
       function myFunction(el) {
