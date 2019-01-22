@@ -1,0 +1,123 @@
+.btn {
+  padding: 0.5em 1em;
+  cursor: pointer;
+  border-radius: 50%;
+  background-color: rgba(1, 1, 1, 0.4);
+}
+.menu-inactive {
+  /*  classs given from js   */
+  visibility: hidden;
+}
+
+#menu-fixed {
+  position: fixed;
+  z-index: 3;
+  display: block;
+  left: 50vw;
+  bottom: 1vh;
+  transform: translateX(-50%);
+  animation: menuAppear 1s 2s both;
+}
+
+#menu-fixed .line {
+  height: 6px;
+  width: 40px;
+  background: white;
+  margin-bottom: 0.3em;
+  display: block;
+  z-index: 3;
+  border-radius: 3px;
+  transition: all 0.4s ease-out;
+  box-shadow: 0 0 2px blue;
+}
+
+/*    ACTIVE      */
+#menu-fixed.active .line:nth-child(1) {
+  transform: translateY(175%) rotate(135deg);
+  box-shadow: 0 0 5px white;
+}
+#menu-fixed.active .line:nth-child(2) {
+  transform: rotate(-360deg);
+  opacity: 0;
+}
+#menu-fixed.active .line:nth-child(3) {
+  transform: translateY(-175%) rotate(-135deg);
+  box-shadow: 0 0 5px white;
+}
+
+/// arrows
+
+.arrow {
+  width: 4.5rem;
+  height: 4.5rem;
+  box-shadow: 1px -1px 1px 0px rgba(0, 0, 0, 0.5),
+    -1px 1px 1px 0px rgba(255, 255, 255, 0.5);
+}
+.arrow:hover .arrow-inside {
+  transform: translateX(18%);
+}
+.arrow-inside {
+  transition: transform 0.4s cubic-bezier(0.44, -0.46, 0.23, 1.49);
+}
+
+.arrow-line {
+  background: white;
+  width: 3rem;
+  height: 8px;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 2px white;
+  overflow: hidden;
+}
+.arrow-line:nth-child(2) {
+  width: 4rem;
+  height: 15px;
+  margin-left: -1rem;
+}
+.arrow-line:nth-child(1) {
+  transform: skewX(-50deg) rotate(20deg);
+  margin-top: 30%;
+}
+.arrow-line:nth-child(3) {
+  transform: skewX(50deg) rotate(-20deg);
+}
+
+.back {
+  transform: rotate(180deg);
+}
+
+/*#####################################		 		NAVIGATION  				########################################*/
+
+.fixed-btn {
+  display: inline-block;
+  position: fixed;
+  bottom: 1vh;
+  z-index: 2;
+  left: 57vw;
+}
+
+@media (max-width: 750px) {
+  .fixed-btn {
+    left: 52vw;
+  }
+}
+
+#fixed1 {
+  transform: scale(0.7) translateX(-72vw);
+  animation: placingNavigation 1s 2s both;
+}
+#fixed2 {
+  transform: scale(0.7) translateX(40vw);
+  animation: placingNavigation 1s 2s both;
+}
+@media (max-width: 750px) {
+  #fixed1 {
+    animation: placingNavigation 1s 2s both;
+    transform: scale(0.7) translateX(-72vw);
+  }
+  #fixed2 {
+    animation: placingNavigation 1s 2s both;
+    transform: scale(0.7) translateX(40vw);
+  }
+}
+
+// #################################### END NAVIGATION ##############################################################
