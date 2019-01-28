@@ -620,13 +620,10 @@ GOT THE PATH OF THE ANCHOR TAG AND GIVEN THE CLASS COVER-SCREEN TO THE PARENT (.
   background-position: top center; }
 
 .part:nth-child(8) {
-  background-color: rgba(236, 236, 236, 0.8); }
+  background-color: whitesmoke; }
 
-.part:nth-child(9) {
-  background-color: #28d0ff; }
-
-.part:nth-child(10) {
-  background-color: #ffed38; }
+.part:nth-child(8) p {
+  color: #005f6b; }
 
 /*MENU		MENU    ####MENU		MENU    ####MENU		MENU    ####MENU		MENU    ####MENU		MENU    ####MENU		MENU    ####MENU		MENU    ####MENU	*/
 @keyframes menuAppear {
