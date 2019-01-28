@@ -19,6 +19,7 @@
   overflow: hidden;
   overflow-x: scroll;
 }
+
 .title-part {
   font-family: Bowlby One SC !important;
   color: rgba(250, 250, 250, 0.9);
@@ -31,6 +32,7 @@
   padding: 3rem;
   transition: transform 0.3s ease-out;
 }
+
 .title-part:hover {
   transform: scale(1.08);
   cursor: pointer;
@@ -254,13 +256,10 @@ GOT THE PATH OF THE ANCHOR TAG AND GIVEN THE CLASS COVER-SCREEN TO THE PARENT (.
   background-position: top center;
 }
 .part:nth-child(8) {
-  background-color: rgba(236, 236, 236, 0.8);
+  background-color: whitesmoke;
 }
-.part:nth-child(9) {
-  background-color: rgba(40, 208, 255, 1);
-}
-.part:nth-child(10) {
-  background-color: rgba(255, 237, 56, 1);
+.part:nth-child(8) p {
+  color: rgb(0, 95, 107);
 }
 
 /*MENU		MENU    ####MENU		MENU    ####MENU		MENU    ####MENU		MENU    ####MENU		MENU    ####MENU		MENU    ####MENU		MENU    ####MENU	*/
